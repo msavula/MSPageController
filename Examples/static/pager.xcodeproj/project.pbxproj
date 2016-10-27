@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE01DA771DBE5B6C003162A6 /* MSCardFlowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01DA761DBE5B6C003162A6 /* MSCardFlowAnimator.m */; };
+		CE5EC1691DC246100003EEE9 /* MSPushOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC1681DC246100003EEE9 /* MSPushOutAnimator.m */; };
 		CED7F71D1DA292CB007D5318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7F71C1DA292CB007D5318 /* main.m */; };
 		CED7F7201DA292CB007D5318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7F71F1DA292CB007D5318 /* AppDelegate.m */; };
 		CED7F7231DA292CB007D5318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7F7221DA292CB007D5318 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		CE01DA751DBE5B6C003162A6 /* MSCardFlowAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCardFlowAnimator.h; sourceTree = "<group>"; };
 		CE01DA761DBE5B6C003162A6 /* MSCardFlowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCardFlowAnimator.m; sourceTree = "<group>"; };
+		CE5EC1671DC246100003EEE9 /* MSPushOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPushOutAnimator.h; sourceTree = "<group>"; };
+		CE5EC1681DC246100003EEE9 /* MSPushOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPushOutAnimator.m; sourceTree = "<group>"; };
 		CED7F7181DA292CB007D5318 /* pager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED7F71C1DA292CB007D5318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED7F71E1DA292CB007D5318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				CED7F7561DA29B0F007D5318 /* MSCubePageAnimator.m */,
 				CE01DA751DBE5B6C003162A6 /* MSCardFlowAnimator.h */,
 				CE01DA761DBE5B6C003162A6 /* MSCardFlowAnimator.m */,
+				CE5EC1671DC246100003EEE9 /* MSPushOutAnimator.h */,
+				CE5EC1681DC246100003EEE9 /* MSPushOutAnimator.m */,
 			);
 			name = MSPageController;
 			path = ../../../MSPageController;
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED7F7231DA292CB007D5318 /* ViewController.m in Sources */,
+				CE5EC1691DC246100003EEE9 /* MSPushOutAnimator.m in Sources */,
 				CED7F7201DA292CB007D5318 /* AppDelegate.m in Sources */,
 				CED7F75E1DA2A44E007D5318 /* MSLabelController.m in Sources */,
 				CED7F7571DA29B0F007D5318 /* MSCubePageAnimator.m in Sources */,

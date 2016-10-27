@@ -25,9 +25,24 @@
                                     <segue destination="2pd-S4-HTV" kind="embed" identifier="MSPageControllerEmbedSegue" id="54z-fU-qrL"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DCM-2X-aLk">
+                                <frame key="frameInset" minX="22" height="29" maxX="23" maxY="19"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <segments>
+                                    <segment title="Card Flow"/>
+                                    <segment title="Cube"/>
+                                    <segment title="Push Out"/>
+                                </segments>
+                                <connections>
+                                    <action selector="animationSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="w45-gY-E1K"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="animationSegment" destination="DCM-2X-aLk" id="9PZ-Qx-sNJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

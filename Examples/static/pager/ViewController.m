@@ -11,14 +11,21 @@
 
 #import "MSCubePageAnimator.h"
 #import "MSCardFlowAnimator.h"
+#import "MSPushOutAnimator.h"
 
 #import "MSPrefilledTableController.h"
 #import "MSLabelController.h"
 
 @interface ViewController () <MSPageControllerDataSource, MSPageControllerDelegate>
 
+@property (nonatomic, weak) IBOutlet UISegmentedControl *animationSegment;
+
+- (IBAction)animationSelected:(id)sender;
+
+
 @property (nonatomic, strong) MSPageController *pageController;
 @property (nonatomic, strong) NSArray <UIViewController *> *viewControllers;
+@property (nonatomic, assign) NSInteger selectedSegmentIndex;
 
 @end
 
@@ -66,6 +73,35 @@
         self.pageController.dataSource = self;
         self.pageController.pageAnimator = [[MSCardFlowAnimator alloc] init];
     }
+}
+
+#pragma mark - UI Actions
+
+- (IBAction)animationSelected:(id)sender {
+    if (self.animationSegment.selectedSegmentIndex == self.selectedSegmentIndex) {
+        return;
+    }
+    
+    switch (self.animationSegment.selectedSegmentIndex) {
+        case 0:
+        {
+            self.pageController.pageAnimator = [[MSCardFlowAnimator alloc] init];
+            break;
+        }
+        case 1:
+        {
+            self.pageController.pageAnimator = [[MSCubePageAnimator alloc] init];
+            break;
+        }
+        case 2:
+        default:
+        {
+            self.pageController.pageAnimator = [[MSPushOutAnimator alloc] init];
+            break;
+        }
+    }
+    
+    self.selectedSegmentIndex = self.animationSegment.selectedSegmentIndex;
 }
 
 #pragma mark - Page Controller Data Source

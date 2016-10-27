@@ -181,7 +181,7 @@ typedef NS_ENUM(NSUInteger, MSPageSwitchDirection) {
         percentageOfWidth = self.startLocationX / self.view.frame.size.width;
     }
     
-    // TODO: take velocity into consideration, fall back when velocity cancels out current possition
+    // TODO: take velocity into consideration, fall back when velocity cancels out current progress
     if (percentageOfWidth <= 0.15f) {
         // fall back
         UIViewController *viewController = self.currentController;

@@ -30,7 +30,7 @@
     
     // to layer
     // scale from 0.9 to 1
-    toViewController.view.layer.transform = CATransform3DMakeScale(0.9 + 0.1 * (forward ? (1 - percent) : percent), 0.9 + 0.1 * (forward ? (1 - percent) : percent), 1);;
+    toViewController.view.layer.transform = CATransform3DMakeScale(0.9 + 0.1 * (forward ? (1 - percent) : percent), 0.9 + 0.1 * (forward ? (1 - percent) : percent), 1);
 }
 
 @end
